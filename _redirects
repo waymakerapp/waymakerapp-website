@@ -1,0 +1,12 @@
+# waymakerapp.org.uk → waymakerapp.org (handled at Cloudflare DNS/domain level,
+# but this catches any residual requests if both domains point to same Pages project)
+https://waymakerapp.org.uk/* https://waymakerapp.org/:splat 301
+
+# Clean URL routing — Cloudflare Pages serves .html files automatically,
+# but these ensure /privacy and /map work without the .html extension
+/map     /map.html     200
+/privacy /privacy.html 200
+
+# Legacy URL redirects (in case old kingdomwaytrust.org links circulate)
+/waymaker-privacy-policy /privacy 301
+/ehs-map                 /map     301

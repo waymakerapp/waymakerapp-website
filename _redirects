@@ -10,3 +10,4 @@ https://waymakerapp.org.uk/* https://waymakerapp.org/:splat 301
 # Legacy URL redirects (in case old kingdomwaytrust.org links circulate)
 /waymaker-privacy-policy /privacy 301
 /ehs-map                 /map     301
+
